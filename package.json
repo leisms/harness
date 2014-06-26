@@ -1,0 +1,17 @@
+{
+    "name": "harness"
+  , "version": "0.0.1"
+  , "description": "Lightweight and intuitive testing boilerplate for Node.js."
+  , "scripts": {
+        "test": "TESTING=true mocha --growl --reporter spec --ui bdd --slow 500 --timeout 1000 --globals should,utils,mocks --watch $(find . -name '*.test.js' -not \\( -path './node_modules/*' -prune \\))"
+    },
+    "author": "leisms"
+  , "license": ""
+  , "dependencies": {
+    }
+  , "devDependencies": {
+        "mocha": "~1.14.0"
+      , "request": "~2.27.0"
+      , "should": "~2.1.0"
+    }
+}
